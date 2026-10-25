@@ -55,11 +55,11 @@ export const SettingsModal = ({ isOpen, onClose, onUrlChanged }) => {
                 className="text-input"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="http://localhost:8000 or https://your-backend.vercel.app"
+                placeholder="http://localhost:8000 or https://your-backend.onrender.com"
               />
             </div>
             <p className="field-hint">
-              Default is <code>http://localhost:8000</code>. When deploying frontend on Vercel, enter your deployed FastAPI server URL here.
+              Default is <code>http://localhost:8000</code>. When deploying frontend on Netlify, enter your deployed Render FastAPI server URL here.
             </p>
           </div>
 

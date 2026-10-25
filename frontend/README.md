@@ -37,12 +37,16 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🌐 Deploying to Vercel
+## 🌐 Deploying to Netlify
 
 1. Push your repository to GitHub.
-2. In the [Vercel Dashboard](https://vercel.com/), select **Add New Project** and pick this repository.
-3. Set **Root Directory** to `week2/hireme/frontend`.
-4. In **Environment Variables**, add:
+2. In the [Netlify Dashboard](https://app.netlify.com/), select **Add new site** -> **Import an existing project** and pick this repository.
+3. Netlify will auto-detect settings from `netlify.toml`:
+   - **Base directory**: `frontend`
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+4. Under **Environment Variables**, add:
    - `VITE_API_URL`: Your deployed FastAPI backend URL (e.g. `https://your-backend.onrender.com`).
 5. Click **Deploy**!
-   *(The included `vercel.json` ensures client-side routing works smoothly out of the box).*
+   *(The included `netlify.toml` and `_redirects` ensure client-side routing works smoothly out of the box).*
+

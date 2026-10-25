@@ -29,7 +29,7 @@ model = "openai/gpt-oss-120b"
 
 app = FastAPI(title="HireMe Candidate AI Assistant")
 
-# Enable CORS for frontend connectivity (Vite dev server, Vercel deployments, etc.)
+# Enable CORS for frontend connectivity (Vite dev server, Netlify deployments, etc.)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
